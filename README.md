@@ -1,1 +1,2 @@
-# JS-1
+# JS
+Arrays concept examples
