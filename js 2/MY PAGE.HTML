@@ -1,0 +1,30 @@
+<head>
+    <title> Hello Page </title>
+</head>
+<body>
+
+    <H1> Enter a 3 digit number and lets check your Luck </H1>
+    <input type="number" id="tb">
+    <input type="submit" id="bt" onclick="jsfunc()">
+
+<script>
+
+    function jsfunc()
+    {
+
+       var arr=[777,222,134,555,999,352,100,999,288];
+       var lucky=0;
+       var val=parseInt(document.getElementById("tb").value);
+       for (ele of arr) {
+            if (ele==val) lucky=1;
+       }
+       if (lucky == 0) {
+             alert("You are Unlucky today");
+    } 
+    else alert("You are Lucky Today and won prize of 9999$");
+}
+
+</script>
+
+</body>
+
